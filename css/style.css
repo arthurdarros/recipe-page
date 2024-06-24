@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+
+}
+
+div#main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1%;
+    padding: 1%;
+    background-color: white;
+    height: auto;
+}
+div#main h1{
+    font-size: 30pt;
+}
+
+.attribution { 
+    font-size: 11px; 
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    padding: 2%;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} 
