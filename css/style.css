@@ -1,5 +1,6 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 body{
     display: flex;
     justify-content: center;
@@ -12,22 +13,128 @@ div#main{
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    margin: 1%;
+    margin-right: 32%;
+    margin-left: 32%;
     padding: 1%;
     background-color: white;
     height: auto;
 }
 div#main h1{
-    font-size: 30pt;
+    font-size: 50pt;
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0;
 }
-
-.attribution { 
-    font-size: 11px; 
+div#main img{
+    width: 100%;
+}
+div#main p{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 1%;
+    font-size: 15pt;
+    text-align: justify;
+}
+div#preparation {
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 15px;
+    margin-left: 2%;
+    padding: 2%;
+    background-color: rgba(248, 167, 250, .2);
+}
+div#preparation h3{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18pt;
+    color: rgba(112, 0, 250, 1);
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+div#preparation ul{
+    margin-bottom: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 13pt;
+}
+div#preparation li::marker{
+    color: rgba(112, 0, 250, 1);
+}
+div.lists h2{
+    font-family: "Handlee", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30pt;
+    margin-bottom: 0;
+    color: rgba(250, 107, 86, .8);
+}
+div.lists ul{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+}
+div.lists li::marker{
+    color: rgba(250, 107, 86, .8);
+}
+div.lists{
+    border-bottom:  1px solid rgba(191, 191, 191, .7);
+    width: 100%;
+    margin-bottom: 2%;
+}
+div.lists ol{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+}
+table tr:last-child {
+    border-bottom: none;
+}
+table td{
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+table td strong {
+    color: #8b4513;
+}
+.attribution {
+    display: flex;
+    width: 100%;
+    justify-content: center;
     flex-direction: row;
+    font-size: 11px; 
     padding: 2%;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 } 
+@media (max-width: 600px){
+    body{
+        margin: 0;
+    }
+    div#main{
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #main h1{
+        font-size: 10px;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
